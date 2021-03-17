@@ -71,10 +71,9 @@ class MessageList extends React.PureComponent {
 
   render () {
     const isApiStarted = this.api.isStarted()
-    // const {errorMessages, warningMessage, infoMessages} = this.sortMessages();
     return (
       <Container>
-        <ButtonDiv className='buttonDiv'>
+        <ButtonDiv>
           <Button onClick={this.handleClick}>
             {isApiStarted ? 'STOP' : 'START'}
           </Button>
